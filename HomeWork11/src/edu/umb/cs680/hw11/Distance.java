@@ -17,9 +17,6 @@ public class Distance
     };
 
     public static List<List<Double>> matrix(List<List<Double>> points, DistanceMetric metric) {
-        // This method is not that efficient; there is a room for performance
-        // improvement by, for example, taking advantage of the symmetric nature
-        // of a distance matrix. But, let's not worry about that here.
         int numOfPoints = points.size();
         List<List<Double>> distanceMatrix = Distance.initDistanceMatrix(numOfPoints);
         List<Double> current, peer;
