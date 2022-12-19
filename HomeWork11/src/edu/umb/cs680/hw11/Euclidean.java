@@ -6,7 +6,6 @@ public class Euclidean implements DistanceMetric{
     public double distance(List<Double> p1, List<Double> p2)
     {
         double a;
-        // TODO Error handling if p1.size() != p2.size()
         if(p1.size() == p2.size())
         {
             double sumOfSquared = 0.0;
